@@ -1,0 +1,41 @@
+{
+  "name": "jupyterlab_xkcd",
+  "version": "0.1.0",
+  "description": "Show a random xkcd.com comic in a JupyterLab notebook window",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension"
+  ],
+  "homepage": "git@github.com:drscott173/xkcd.git",
+  "bugs": {
+    "url": "git@github.com:drscott173/xkcd.git/issues"
+  },
+  "license": "BSD-3-Clause",
+  "author": "Scott Penberthy",
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:drscott173/xkcd.git.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^0.16.0"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1",
+    "typescript": "~2.6.0"
+  },
+  "jupyterlab": {
+    "extension": true
+  }
+}
